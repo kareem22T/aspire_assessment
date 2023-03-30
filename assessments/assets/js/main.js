@@ -54,7 +54,7 @@ $(function () {
                 'boxShadow': 'rgba(0, 0, 0, 0.1) 0px 4px 12px'
             })
             $(this).parent().siblings().find('label').css({
-                'background': '#f1eff3',
+                'background': '#e3e3e3',
                 'color': '#000',
                 'fontWeight': '400',
                 'boxShadow': 'none'
