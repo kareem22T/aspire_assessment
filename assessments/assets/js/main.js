@@ -7,9 +7,20 @@ $(function () {
         // try 1
         $('.ans-opt:checked').parent().find('.try-1 span').css('background', '#C01E2E')
 
-        // try 2
-        if ($('.ans-opt:checked').parent().hasClass('try-2'))
-            $('.try-2 .ans-opt:checked').parent().css('borderColor', '#FFC719')
+        if ($('.ans-opt:checked').parent().hasClass('try-2')) {
+            $('.ans-opt:checked').parent().css({
+                'borderColor': '#c81e2b',
+                'background': 'linear-gradient(144deg, rgb(253, 243, 243) 0%, rgb(255, 255, 255) 100%)',
+                'boxShadow': 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
+                'color': '#c81e2b'
+            })
+            $('.ans-opt:checked').parent().find('.progress-bar').css({
+                'backgroundColor': '#c81e2b',
+            })
+            $('.ans-opt:checked').parent().find('span').css({
+                'fontWeight': '500;',
+            })
+        }
 
         // try 3
         if ($('.ans-opt:checked').parent().hasClass('try-3')) {
@@ -37,13 +48,37 @@ $(function () {
         // try 1 
         $(this).parent().find('.try-1 span').css('background', '#C01E2E')
 
-        //try 2
-        if ($(this).parent().hasClass('try-2'))
-            $(this).parent().siblings().css('borderColor', '#cbcbcb')
+        // try 2
+        if ($(this).parent().hasClass('try-2')) {
+            $(this).parent().siblings().css({
+                'borderColor': 'rgb(203, 203, 203)',
+                'background': '#fff',
+                'boxShadow': 'none',
+                'color': '#000'
+            })
+            $(this).parent().siblings().find('.progress-bar').css({
+                'backgroundColor': '#FFC719',
+            })
+            $(this).parent().siblings().find('span').css({
+                'fontWeight': '400',
+            })
+        }
 
         // try 2
-        if ($(this).parent().hasClass('try-2'))
-            $(this).parent().css('borderColor', '#FFC719')
+        if ($(this).parent().hasClass('try-2')) {
+            $(this).parent().css({
+                'borderColor': '#c81e2b',
+                'background': 'linear-gradient(144deg, rgb(253, 243, 243) 0%, rgb(255, 255, 255) 100%)',
+                'boxShadow': 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
+                'color': '#c81e2b'
+            })
+            $(this).parent().find('.progress-bar').css({
+                'backgroundColor': '#c81e2b',
+            })
+            $(this).parent().find('span').css({
+                'fontWeight': '500;',
+            })
+        }
 
         // try 3
         if ($(this).parent().hasClass('try-3')) {
