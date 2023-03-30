@@ -228,14 +228,17 @@ main {
             border: 0px;
             outline: 2px solid #c01e2e !important;
         }
-        img {
+        .img {
+            width: min-content;
             position: absolute;
             top: -50px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             left: 50%;
             transform: translateX(-50%);
+            img {
+                background: white;
+                border-radius: 15px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
         }
         input:not([type="checkbox"]) {
             font-size: clamp(1.1875rem, calc(1.0208rem + 0.6667vw), 1.5625rem);
