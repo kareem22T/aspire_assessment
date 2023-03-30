@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+// $main-color: ;
+$secondary-color: #FFC719;
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    .container {
+        @extend %flex-center;
+        justify-content: space-between;
+        background: #000000;
+        border-radius: 0px 0px 30px 30px;
+        padding: 17px 50px;
+        .logo {
+            @extend %flex-center;
+            flex-direction: column;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            img {
+                width: 50px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 29px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 38px;
+            color: #FFFFFF;
+            a {
+                color: white;
+                text-decoration: none;
+                i {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .solutions .container{
+        @extend %flex-center;
+        flex-direction: column;
+        gap: 13px;
+        text-align: center;
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            color: #C01E2E;
+        }
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: center;
+            color: #000000;
+        }
+        a {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 38px;
+            text-align: center;
+            color: #FFFFFF;
+            text-decoration: none;
+            background: #C01E2E;
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            padding: 20px;
+            display: block;
+            width: fit-content;
+            margin-top: 10px;
+        }
+    }
+
+    .statistics, .serve {
+        >h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            color: #C01E2E;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            >div {
+                @extend %flex-center;
+                flex-direction: column;
+                gap: 25px;
+                position: relative;
+                text-align: center;
+                padding: 15px;
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: calc(100% - 95px);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: #ECECEC;
+                    border-radius: 20px;
+                    z-index: -1;
+                }
+                .img {
+                    @extend %flex-center;
+                    background: #FFF8F8;
+                    border: 2px solid #C01E2E;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #000000;
+                }
+
+                h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 30px;
+                    text-align: center;
+                    text-transform: lowercase;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
