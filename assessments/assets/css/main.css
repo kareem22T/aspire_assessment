@@ -3,7 +3,7 @@
   font-family: 'Outfit', sans-serif;
 }
 
-header .container, header .container .main-content > div, header .container .main-content > div p, main .container, main .container .answers, main .container .answers .form-check label, .register .container, .register .container form, .register .container form > div {
+header .container, header .container .main-content > div, header .container .main-content > div p, main .container, main .container .answers, main .container .answers .form-check label, main .container .answers.span-opts-1 .form-check label > span:first-child, .span-opts-3 .wrapper, .register .container, .register .container form, .register .container form > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@ main {
 }
 main .container {
   flex-direction: column;
-  gap: 50px;
+  gap: clamp(1.6875rem, calc(1.0486rem + 2.5556vw), 3.125rem);
   align-items: start;
 }
 main .container .question {
@@ -126,6 +126,9 @@ main .container .answers .form-check {
   transition: all .3s ease-out;
   padding-left: 3px;
 }
+main .container .answers .form-check:first-child {
+  display: none;
+}
 main .container .answers .form-check input {
   opacity: 0;
 }
@@ -141,6 +144,70 @@ main .container .answers .form-check label {
 }
 main .container .answers .form-check img {
   width: clamp(3.125rem, calc(1.7361rem + 5.5556vw), 6.25rem);
+}
+main .container .answers.span-opts-1 {
+  flex-wrap: wrap;
+}
+main .container .answers.span-opts-1 .form-check label {
+  flex-direction: row;
+  align-items: center;
+}
+main .container .answers.span-opts-1 .form-check label > span:first-child {
+  width: clamp(1.25rem, calc(0.9722rem + 1.1111vw), 1.875rem);
+  height: clamp(1.25rem, calc(0.9722rem + 1.1111vw), 1.875rem);
+  border-radius: 50%;
+  border: 2px solid #cbcbcb;
+}
+main .container .answers.span-opts-1 .form-check label > span:first-child span {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: transparent;
+  display: block;
+  transition: all .2s ease-out;
+}
+main .container .answers.span-opts-1 .form-check label .try-1 + span {
+  font-size: clamp(1rem, calc(0.8889rem + 0.4444vw), 1.25rem);
+}
+main .container .answers.span-opts-2 {
+  gap: clamp(0.625rem, calc(0.2083rem + 1.6667vw), 1.5625rem);
+  flex-wrap: wrap;
+}
+main .container .answers.span-opts-2 .form-check:not(:first-child) {
+  border: 2px solid #cbcbcb;
+  border-radius: 15px;
+}
+main .container .answers.span-opts-2 label {
+  margin: 13px;
+}
+main .container .answers.span-opts-2 .progress {
+  width: 100%;
+}
+main .container .answers.span-opts-2 span {
+  font-size: clamp(1rem, calc(0.8889rem + 0.4444vw), 1.25rem);
+}
+main .container .answers.span-opts-2 h1 {
+  font-size: 18px;
+  line-height: 13px;
+}
+
+.span-opts-3 .wrapper {
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.span-opts-3 .wrapper .form-check {
+  width: auto;
+}
+.span-opts-3 .wrapper .form-check:first-child {
+  grid-column: 6;
+}
+.span-opts-3 .wrapper .form-check label {
+  background-color: #f1eff3;
+  padding: 10px 20px;
+  transition: background-color .4s ease-out;
+}
+.span-opts-3 .wrapper .form-check label span {
+  font-size: clamp(1.0625rem, calc(0.9514rem + 0.4444vw), 1.3125rem);
 }
 
 .loader {
