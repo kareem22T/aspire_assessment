@@ -3,7 +3,7 @@
   font-family: 'Outfit', sans-serif;
 }
 
-header .container, header .container .logo, main .solutions .container, main .statistics .container > div, main .serve .container > div, main .statistics .container > div .img, main .serve .container > div .img {
+header .container, header .container .logo, main .solutions .container, main .statistics .container > div, main .serve .container > div, main .statistics .container > div .img, main .serve .container > div .img, main .serve .container > div .text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,6 +142,38 @@ main .statistics .container > div h3, main .serve .container > div h3 {
   text-align: center;
   text-transform: lowercase;
   color: #000000;
+}
+main .serve .container > div h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+}
+main .serve .container > div p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+main .serve .container > div a {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #C01E2E;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);
+  padding: 10px 25px;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+}
+main .serve .container > div .text {
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */

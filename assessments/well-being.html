@@ -12,6 +12,19 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="shortcut icon" href="assets/img/aspire.png" type="image/x-icon">
     <title>Aspire | Well being Assesment</title>
+    <style>
+        .question:nth-child(2n+1) {
+            background-color: rgba(245, 245, 245, 0.514);
+        }
+    
+        .question {
+            padding: clamp(0.625rem, calc(0.2378rem + 1.6304vw), 1.5625rem);
+        }
+    
+        main .container {
+            gap: 0 !important;
+        }
+    </style>
 </head>
 <body id="app">
 
@@ -212,49 +225,6 @@
                                 <span>always</span>
                             </label>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="question">
-                <h1>4- My values guide my daily life.</h1>
-                <div class="answers">
-                    <div class="form-check">
-                        <input class="form-check-input checked" type="radio" name="ans_q4" value="0" checked>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input ans-opt" type="radio" name="ans_q4" id="ans_q4_1" value="1">
-                        <label class="form-check-label" for="ans_q4_1">
-                            <img src="./assets/img/never.png" alt="">
-                            <span>never</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input ans-opt" type="radio" name="ans_q4" id="ans_q4_2" value="2">
-                        <label class="form-check-label" for="ans_q4_2">
-                            <img src="./assets/img/rarely.png" alt="">
-                            <span>rarely</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input ans-opt" type="radio" name="ans_q4" id="ans_q4_3" value="3">
-                        <label class="form-check-label" for="ans_q4_3">
-                            <img src="./assets/img/sometimes.png" alt="">
-                            <span>sometimes</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input ans-opt" type="radio" name="ans_q4" id="ans_q4_4" value="4">
-                        <label class="form-check-label" for="ans_q4_4">
-                            <img src="./assets/img/frequently.png" alt="">
-                            <span>frequently</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input ans-opt" type="radio" name="ans_q4" id="ans_q4_5" value="5">
-                        <label class="form-check-label" for="ans_q4_5">
-                            <img src="./assets/img/always.png" alt="">
-                            <span>always</span>
-                        </label>
                     </div>
                 </div>
             </div>
