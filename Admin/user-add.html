@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="./../assessments/assets/img/aspire.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <style>
+    </style>
+    <title>Admin | Users-Add</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1><i class="fa fa-bars"></i> Add User</h1>
+            <form action="">
+                <input type="text" name="search" id="search" placeholder="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <a href="" class="profile">
+                KareemMohamed11
+                <div class="img"><img src="./assets/img/karim.jpg" alt=""></div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <aside>
+        <i class="fa fa-close"></i>
+        <nav>
+            <a href="" class="logo">
+                <img src="./../assessments/assets/img/aspire.png" alt="">
+                Aspire
+            </a>
+            <ul>
+                <li><a href="/Admin/"><i class="fa fa-home"></i>Home</a></li>
+                <li>
+                    <i class="fa fa-users"></i>Users
+                    <ul>
+                        <li><a href="./users-show.html" ><i class="fa fa-eye"></i>Show users</a></li>
+                        <li><a href="./user-add.html" class="active"><i class="fa fa-add"></i>Add user</a></li>
+                        <li class="Characteristics">
+                            <i class="fa-solid fa-image-portrait"></i>Characteristics <i
+                                class="fa-solid fa-chevron-down arrow-d"></i>
+                            <ul>
+                                <li><a href="./age-group.html">Age Groups</a></li>
+                                <li><a href="./Education-level.html">Education Levels</a></li>
+                                <li><a href="./marital-status.html">Marital Status</a></li>
+                                <li><a href="./nationalities.html">Nationalities</a></li>
+                                <li><a href="./role-levels.html">Role Levels</a></li>
+                                <li><a href="./tenures.html">Tenures</a></li>
+                                <li><a href="./Department.html">Departements</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <i class="fa-solid fa-city"></i> Companies
+                    <ul>
+                        <li><a href="./company-show.html"><i class="fa fa-eye"></i> Show Companies</a></li>
+                        <li><a href="./company-add.html"><i class="fa fa-add"></i> Add Company</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="hide-content"></div>
+
+    <main>
+        <section class="add-user">
+            <div class="container">
+                <div class="manual">
+                    <h1>
+                        Add new user manualy
+                    </h1>
+                    <form action="">
+                        <div class="form-group">
+                            <select name="company" id="company" class="form-control">
+                                <option value="">Choose Company</option>
+                                <option value="1">Cyurs</option>
+                                <option value="2">Company 2</option>
+                                <option value="3">Company 3</option>
+                            </select>
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                            <i class="fa fa-user"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" name="phone" id="phone" class="form-control" placeholder="phone number">
+                            <i class="fa fa-phone"></i>
+                        </div>
+
+                        <button type="submit">Add user</button>
+                    </form>
+                </div>
+                <h1 class="text-secondary">or</h1>
+                <div class="automatic">
+                    <h1>Add users by upload Excel file</h1>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="file" name="profile" id="profile">
+                            <label for="profile"><i class="fa-regular fa-file"></i> <span>Upload Excel file</span></label>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="company" id="company" class="form-control">
+                                <option value="">Choose Company</option>
+                                <option value="1">Cyurs</option>
+                                <option value="2">Company 2</option>
+                                <option value="3">Company 3</option>
+                            </select>
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+
+                        <button type="submit">Add users</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            all rights received to aspire @2023
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/admin.js"></script>
+</body>
+
+</html>
