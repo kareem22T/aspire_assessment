@@ -624,6 +624,7 @@ main .add-user .container > h1 {
 }
 
 .add-pop-up, .edit-pop-up {
+  width: 100%;
   max-width: 370px;
   position: fixed;
   top: 50%;
