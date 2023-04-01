@@ -11,7 +11,7 @@ $(function() {
             }, 200);
         }, 300);
 
-        if ($(window).scrollTop() >= ($('.solutions').offset().top - $(window).height() / 2)) {
+        if ($(window).scrollTop() >= ($('.solutions').offset().top - $(window).height())) {
             $('.solutions p').css('visibility', 'visible').addClass('animate__animated animate__fadeInRightBig');
             setTimeout(() => {
                 $('.solutions h1').css('visibility', 'visible').addClass('animate__animated animate__bounceInDown');
@@ -19,7 +19,7 @@ $(function() {
             }, 500);
         }
 
-        if ($(window).scrollTop() >= ($('.statistics .container >div').offset().top - $(window).height() / 2)) {
+        if ($(window).scrollTop() >= ($('.statistics .container >div').offset().top - $(window).height())) {
             setTimeout(() => {
                 // first child
                 $('.statistics .container >div:first-child').css('visibility', 'visible').addClass('animate__animated animate__bounceInDown');
@@ -80,7 +80,7 @@ $(function() {
             }, 700);
         }
 
-        if ($(window).scrollTop() >= ($('.serve .container >div').offset().top - $(window).height() / 2)) {
+        if ($(window).scrollTop() >= ($('.serve .container >div').offset().top - $(window).height())) {
             setTimeout(() => {
                 $('.serve >h1').css('visibility', 'visible').addClass('animate__animated animate__bounceInLeft');
 
