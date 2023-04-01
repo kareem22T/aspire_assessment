@@ -11,7 +11,7 @@ $(function() {
             }, 200);
         }, 300);
 
-        if ($(window).scrollTop() >= ($('.solutions').offset().top / 6)) {
+        if ($(window).scrollTop() >= ($('.solutions').offset().top - $(window).height() / 2)) {
             $('.solutions p').css('visibility', 'visible').addClass('animate__animated animate__fadeInRightBig');
             setTimeout(() => {
                 $('.solutions h1').css('visibility', 'visible').addClass('animate__animated animate__bounceInDown');
