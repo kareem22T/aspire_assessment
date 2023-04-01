@@ -215,7 +215,7 @@ main .statistics .container, main .serve .container {
 }
 @media (max-width: 767.98px) {
   main .statistics .container, main .serve .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 575.98px) {
@@ -231,11 +231,6 @@ main .statistics .container > div, main .serve .container > div {
   text-align: center;
   padding: clamp(0.625rem, calc(0.4959rem + 0.5435vw), 0.9375rem);
   visibility: hidden;
-}
-@media (max-width: 767.98px) {
-  main .statistics .container > div:last-child, main .serve .container > div:last-child {
-    grid-column: span 2;
-  }
 }
 main .statistics .container > div::after, main .serve .container > div::after {
   content: '';

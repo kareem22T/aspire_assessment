@@ -221,7 +221,7 @@ main {
             grid-template-columns: repeat(3, 1fr);
             gap: clamp(1.125rem, calc(0.9443rem + 0.7609vw), 1.5625rem);
             @media (max-width: 767.98px) {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(1, 1fr);
             }
             @media (max-width: 575.98px) {
                 grid-template-columns: repeat(1, 1fr);
@@ -235,11 +235,6 @@ main {
                 text-align: center;
                 padding: clamp(0.625rem, calc(0.4959rem + 0.5435vw), 0.9375rem);
                 visibility: hidden;
-                &:last-child {
-                    @media (max-width: 767.98px) {
-                        grid-column: span 2;
-                    }
-                }
                 &::after {
                     content: '';
                     width: 100%;
