@@ -19,7 +19,7 @@ $(function() {
             }, 500);
         }
 
-        if ($(window).scrollTop() >= ($('.statistics .container >div').offset().top / 5)) {
+        if ($(window).scrollTop() >= ($('.statistics .container >div').offset().top - $(window).height() / 2)) {
             setTimeout(() => {
                 // first child
                 $('.statistics .container >div:first-child').css('visibility', 'visible').addClass('animate__animated animate__bounceInDown');
@@ -80,7 +80,7 @@ $(function() {
             }, 700);
         }
 
-        if ($(window).scrollTop() >= ($('.serve .container >div').offset().top / 2)) {
+        if ($(window).scrollTop() >= ($('.serve .container >div').offset().top - $(window).height() / 2)) {
             setTimeout(() => {
                 $('.serve >h1').css('visibility', 'visible').addClass('animate__animated animate__bounceInLeft');
 
