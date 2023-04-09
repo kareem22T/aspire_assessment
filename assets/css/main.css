@@ -245,7 +245,7 @@ main .statistics .container > div::after, main .serve .container > div::after {
 }
 main .statistics .container > div .img, main .serve .container > div .img {
   background: #FFF8F8;
-  border: 2px solid #C01E2E;
+  border: 3px solid #000;
   width: clamp(6.875rem, calc(5.8424rem + 4.3478vw), 9.375rem);
   height: clamp(6.875rem, calc(5.8424rem + 4.3478vw), 9.375rem);
   border-radius: 50%;
@@ -274,7 +274,7 @@ main .statistics .container > div h3, main .serve .container > div h3 {
 }
 main .serve .container > div .img {
   background: #FFF8F8;
-  border: 3px solid #C01E2E;
+  border: 3px solid #000;
   text-align: center;
   overflow: hidden;
   width: 100%;
