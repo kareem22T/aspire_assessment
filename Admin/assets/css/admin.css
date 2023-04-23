@@ -112,6 +112,7 @@ header {
 }
 header .container {
   justify-content: space-between;
+  position: relative;
 }
 @media (max-width: 767.98px) {
   header .container {
@@ -197,6 +198,14 @@ header .container .profile {
   font-weight: 300;
   color: #606060;
   letter-spacing: 1px;
+  position: relative;
+  transition: all .3s ease-out;
+  height: 100%;
+  display: block;
+  line-height: 40px;
+}
+header .container .profile:hover {
+  color: #c01e2e;
 }
 header .container .profile .img {
   width: clamp(2.3125rem, calc(1.9769rem + 1.413vw), 3.125rem);
@@ -208,6 +217,36 @@ header .container .profile .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+header .container .more {
+  position: absolute;
+  top: calc(100% + 30px);
+  right: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  line-height: 38px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: none;
+}
+header .container .more hr {
+  margin: 2px;
+}
+header .container .more a {
+  font-size: clamp(0.9375rem, calc(0.8859rem + 0.2174vw), 1.0625rem);
+  text-decoration: none;
+  font-weight: 300;
+  color: #606060;
+  letter-spacing: 1px;
+  transition: all .3s ease-out;
+  height: 100%;
+  display: block;
+}
+header .container .more a:hover {
+  color: #c01e2e;
 }
 
 main .statistics .container {

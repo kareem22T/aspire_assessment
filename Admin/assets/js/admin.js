@@ -47,4 +47,8 @@ $(function () {
     $('.prevent').on('click', function(e) {
         e.preventDefault()
     })
+    $('.profile').on('click', function (e) {
+        e.preventDefault()
+        $("header .more").fadeToggle()
+    })
 })
